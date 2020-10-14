@@ -34,17 +34,13 @@ header{
   background-size: cover;
 }
 
-#titolo_principale{
-  font-family:  sans-serif;
-  font-size: 60px;
-  font-weight: 100;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid white;
-  padding: 15px;
+.container_top{
+  margin: auto;
+  text-align: center;
+}
+
+#logo_titolo{
+  width: 65%;
 }
 
 h3{
@@ -73,7 +69,7 @@ h3{
   text-align: center;
 }
 
-a{
+li a{
   color: white;
   text-decoration: none;
 }
@@ -122,12 +118,25 @@ span{
   border-radius: 5px;
 }
 
+nav i{
+  color: orange;
+  font-size: 30px;
+  position: relative;
+  top: -20px;
+}
+
+nav h2{
+  width: 150px;
+  display: inline-block;
+}
+
 Nav > h2, .box> h2{
-  margin: 20px;
+  text-align: left;
+  margin: 10px;
 }
 
 Nav > p{
-  font-size: 18px;
+  font-size: 20px;
   margin: 15px;
   line-height: 26px;
   text-align: left;
@@ -152,12 +161,13 @@ Nav > p:hover{
 }
 
 .center > h2{
+  font-weight: normal;
   margin-bottom: 30px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .center > p{
-  line-height: 35px;
+  line-height: 30px;
 }
 /* /colonna di centro */
 
@@ -170,7 +180,7 @@ Nav > p:hover{
 
 .colonna_destra > .right{
   background: white;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 30px;
   padding: 15px;
@@ -181,13 +191,14 @@ Nav > p:hover{
 }
 
 .right > h2{
+  margin-top: 15px;
   margin-bottom: 20px;
   padding: 10px;
 }
 
 .right > p{
-  padding: 10px;
-  line-height: 35px;
+  padding: 12px;
+  line-height: 25px;
 }
 /* /colonna di destra */
 /* /main */
@@ -208,6 +219,8 @@ footer{
 
 .intestazione_footer>p{
   text-align: center;
+  color: lightgray;
+
 }
 
 .lista_social{
@@ -216,10 +229,31 @@ footer{
   background: white;
   margin-bottom: 15px;
   border-radius: 5px;
+  position: relative;
 }
 
 .lista_social > div{
-  display: inline;
-  list-style: none;
+  color: lightgrey;
+  font-size: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lista_social > div:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+#facebook{
+  left: 25%;
+}
+#instagram{
+  left: 50%;
+
+}
+#github{
+  left: 75%;
 }
 /* /footer */
